@@ -1,0 +1,11 @@
+{
+    "name": "app",
+    "version": "0.0.1",
+    "description": "login and registration page",
+    "scripts": {
+        "start": "node app.js"
+    },
+    "dependencies": {
+        "mysql": "^2.18.1"
+    }
+}

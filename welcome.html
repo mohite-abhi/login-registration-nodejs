@@ -1,0 +1,102 @@
+<html>
+
+<head>
+    <title>
+        welcome page
+    </title>
+    <style>
+        body {
+            background: linear-gradient(90deg, rgb(170, 226, 223), rgb(103, 209, 204));
+        }
+
+        #welcome {
+            background: linear-gradient(45deg, rgb(193, 193, 219), rgb(125, 146, 207), rgb(59, 88, 175));
+            font-size: 70px;
+            height: 15%;
+            box-shadow: 5px -5px 15px rgb(0, 0, 0);
+            color: rgb(53, 53, 53);
+            
+        }
+
+        #profileCover {
+            color: rgb(37, 37, 37);
+            font-size: 50px;
+            height: 76%;
+            background: linear-gradient(135deg, rgb(194, 177, 214), rgb(156, 109, 214), rgb(110, 57, 173));
+            box-shadow: 5px 5px 15px rgb(0, 0, 0);
+
+        }
+
+
+        .column{
+            padding: 8px 8px 8px 4px;
+            border-radius: 5px;
+            font-size:40px;
+            color: rgb(58, 58, 58);
+            font-weight: 500;
+            background-color: transparent;
+            
+        }
+        .left{
+            color: rgba(0, 0, 0, 0.616);
+        }
+
+        .right{
+            box-shadow: 0 0 10px;
+
+        }
+        .profile{
+            
+            padding: 4px 15px 0 15px; 
+            background-color: rgb(161, 105, 230);
+            width:fit-content; 
+            position: relative;
+            top: 10px;
+            left: 10px;
+            border-radius: 10px;
+            color: rgb(198, 177, 223);
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <div id="welcome">
+        <p style="padding: 10px; ">
+            <text>Namaste</text>
+        </p>
+    </div>
+    <div id="profileCover">
+        <p class="profile">secure</p>
+        <table style="padding: 20px 0 0 20px;">
+            <tr>
+                <td class="column left"><label for="username">Username</label></td>
+                <td></td>
+                <td class="column right">&nbsp;<text id="username">Abhishek</text><br></td>
+            </tr>
+            <tr><td>  </td></tr>
+            <tr>
+                <td class="column left"><label for="id">ID</label></td>
+                <td></td>
+                <td class="column right">&nbsp;<text id="id">B518004</text><br></td>
+            </tr>
+            <tr><td>  </td></tr>
+
+            <tr>
+                <td class="column left"><label for="email">Email</label></td>
+                <td></td>
+                <td class="column right">&nbsp;<text id="email">abhishekmohite421@gmail.com</text></td>
+            </tr>
+        </table>
+    </div>
+</body>
+<script>
+
+    function fillDetails(username, id, email) {
+        document.getElementById("username").innerHTML = username;
+        document.getElementById("id").innerHTML = id;
+        document.getElementById("email").innerHTML = email;
+
+    }
